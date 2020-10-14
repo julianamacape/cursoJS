@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: aquamarine;
-            font: normal bold 1.5em sans-serif;
+            font: normal bold 1em 'Courier New', Courier, monospace ;
             /* lembre-se de que a shorthand para fontes segue uma sequência 1) style 2) weight 3) size 4) family */
         }
     </style>
@@ -19,10 +19,12 @@
     </script>
     <h2>Termos relacionados a variáveis em JavaScript</h2>
     <p>
-        = &#x27A1 <strong>recebe</strong> <br>
-        null &#x27A1 <strong>nulo (vazio)</strong> <br>
-        var ou let &#x27A1 <strong>variável</strong> <br>
-        string &#x27A1 <strong>é texto. O string tem que vir dentro de aspas. Há 3 possibilidades:</strong>
+        <ul>
+        <li>= &#x27A1 <strong>recebe</strong> <br></li>
+        <li>null &#x27A1 <strong>nulo (vazio)</strong> <br></li>
+        <li>var ou let &#x27A1 <strong>variável</strong> <br></li>
+        <li>string &#x27A1 <strong>é texto. O string tem que vir dentro de aspas. Há 3 possibilidades:</strong></li>
+        </ul>
         <ol>
             <li>"Texto"</li>
             <li>'Texto'</li>
@@ -38,5 +40,73 @@
         <li>não pode usar <del>espaços</del></li>
         <li>não pode ser uma <del>palavra reservada</del></li>
     </ul>
+    <h2>Pra entrar no <strong>NodeJS</strong> no MacOS, há 2 maneiras:</h2>
+    <ol>
+        <li>abra o Terminal, digite <em>node - v</em> </li>
+        <li>No VS Code &#x27A1 Terminal &#x27A1 New Terminal &#x27A1 digite <em>node - v</em>  </li>
+    </ol>
+    <h2>Para sair do <strong>NodeJS</strong></h2>
+    <ul>
+        <li>digite <em>.exit</em></li>
+        <li>para sair do terminal, digite <em>exit</em></li>
+    </ul>
+    <p>
+        &#x26A0 Não abra vários terminais dentro do VS Code, pois isso vai deixar o sistema super lento &#x26A0
+    </p>
+    <h2>Ainda sobre indicadores</h2>
+    <ul>
+        <li>MAIÚSCULAS e <small>minúsculas</small> fazem diferença</li>
+        <li>use nomes coerentes</li>
+    </ul>
+    <h3>Number (tipo primitivo mais usado)</h3>
+    <ol>
+        <li>Infinity</li>
+        <li>Nan (Not a Number)</li>
+    </ol>
+    <ul>
+        <li>5, 18, -12, 0.5, -15.9, 3.14, etc</li>
+    </ul>
+    <h3>String (tipo primitivo mais usado)</h3>
+    <ul>
+        <li>"Google", "Qual o seu nome?", "Fale Conosco", etc</li>
+    </ul>
+    <h3>Boolean (tipo primitivo mais usado)</h3>
+    <ul>
+        <li>TRUE ou FALSE</li>
+    </ul>
+    <h3>Null</h3>
+    <h3>Undefined</h3>
+    <h3>Object</h3>
+    <ul>
+        <li>Array</li>
+    </ul>
+    <h3>Function</h3>
+    <p>
+        &#x26A0 Lá no NodeJS, pra você saber qual é o <strong>tipo</strong> da variável já declarada e identificada (ou um valor qualquer sem que seja variável), usamos o comando dentro do NodeJS chamado: <em>typeof</em> &#x26A0
+    </p>
+    <pre>
+        <code>
+            &gt; var n = 200
+            undefined
+            &gt; n
+            '200' <br>
+            &gt; var n = 'Juliana'
+            undefined
+            &gt; n
+            'Juliana'
+            &gt; typeof n
+            'string' <br>
+            &gt; typeof 6
+            'number'
+            &gt; typeof '6'
+            'string'
+            &gt; typeof []
+            'object'
+            &gt; typeof {}
+            'object'
+            &gt; typeof function (){}
+            'function'
+        </code>
+    </pre>
 </body>
 </html>
