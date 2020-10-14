@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <h1>Operadores Aritméticos</h1>
+    <ul>
+        <li>adição +</li>
+        <li>subtração -</li>
+        <li>multiplicação *</li>
+        <li>divisão /</li>
+        <li>resto da divisão inteira %</li>
+        <li>potência **</li>
+    </ul>
+    <h2>Ordem de precedência</h2>
+    <ol>
+        <li>tudo o que estiver entre ()</li>
+        <li>potência</li>
+        <li>divisão/multiplicação/resto da divisão</li>
+        <li>soma/subtração</li>
+    </ol>
+    <p>
+        E se houver mais de uma operação dos tipos 3 ou 4 numa mesma expressão, comça a resolver da <strong>esquerda</strong> para a <strong>direita</strong>.
+    </p>
+    <h2>Auto-atribuição</h2>
+    <p>
+        Veja que no código abaixo, <em>n</em> inicialmente vale '3', mas aí passa a valer '7' em função da auto-atriuição.
+    </p>
+    <pre>
+        <code>
+            > var n = 3
+            undefined
+            > n
+            3
+            > n = n+4
+            7
+            > n
+            7
+        </code>
+    </pre>
+    <p>
+        Vamos continuar brincando no NodeJS e vendo as auto-atribuições acontecendo:
+    </p>
+    <pre>
+        <code>
+            > n
+            7
+            > n = n-5
+            2
+            > n
+            2
+            > n = n*4
+            8
+            > n
+            8
+            > n = n/2
+            4
+            > n
+            4
+            > n = n**2
+            16
+            > n
+            16
+            > n = n%5
+            1
+            > n
+            1
+        </code>
+    </pre>
+    <h3>Auto-atribuições simplicadas</h3>
+    <p>
+        É uma forma de encurtar a expressão então, por exemplo, ao invés de escrever <code>n = n+4</code> você escreve <code>n+=4</code>. Veja abaixo no NodeJS as mesmas auto-atribuições que fizemos na demonstração passada, agora simplificadas.
+    </p>
+    <pre>
+        <code>
+            > n
+            7
+            > n = n-5 &#x27A1 ficaria <strong>n+=5</strong>
+            2
+            > n
+            2
+            > n = n*4 &#x27A1 ficaria <strong>n*=4</strong>
+            8
+            > n
+            8
+            > n = n/2 &#x27A1 ficaria <strong>n/=2</strong>
+            4
+            > n
+            4
+            > n = n**2 &#x27A1 ficaria <strong>n**=2</strong>
+            16
+            > n
+            16
+            > n = n%5 &#x27A1 ficaria <strong>n%=5</strong>
+            1
+            > n
+            1
+        </code>
+    </pre>
+    <h2>Operadores de Incremento</h2>
+    <p>
+        Quando acontecer de ser <code>n = n+1</code> ou <code>n = n-1</code> já aprendemos que, através do comando da auto-atribuição simplificada, a expressão pode ficar <code>n+=1</code> ou <code>n-=1</code>, respectivamente. <br> Com os operadores de incremento, você pode transformar essa empressão em <code>x++</code> ou <code>x--</code>, respectivamente.
+    </p>
+</body>
+</html>
