@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+        body {
+            font: normal normal 1.2em Arial;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratamento de Dados</h1>
+    <h2>Manipulação de Dados</h2>
+    <p>
+        Nessa página utilizamos mais uma vez o comando <code>window.prompt</code> e vamos fazer uma análise a respeito dessa soma que foi sugerida.
+    </p>
+    <script>
+        var n1 = window.prompt ('Digite um número: ')
+        var n2 = window.prompt ('Digite outro número: ')
+        var soma = n1 + n2
+        window.alert ('A soma dos dois valors que você digitou é ' + soma)
+    </script>
+    <pre>
+        <code>
+            &lt;script>
+                var n1 = window.prompt ('Digite um número: ')
+                var n2 = window.prompt ('Digite outro número: ')
+                var soma = n1 + n2
+                window.alert ('A soma dos dois valors que você digitou é ' + soma)
+            &lt;/script>
+        </code>
+    </pre>
+    <p>
+        Veja o código acima. A questão é que o comando <code>window.prompt</code> <strong>sempre</strong> retorna uma <em>string</em>, mesmo que o que foi digitado tenha sido um número, sabia disso? É por isso que a última janela pop-up não retornou a soma, ela simplesmente colocou juntinho os 2 valores que você digitou, ou seja, foi feita uma <strong>concatenação</strong>. <br> É preciso, nesse caso, <em>tratar</em> os dados de n1 e n2. É preciso <strong>converter</strong> esses dados.
+    </p>
+    <p>
+        &#x26A0 Vamos falar sobre o sinal de "+" em JavaScript &#x26A0
+        <li>numer + number &#x27A1 <strong>soma</strong> </li>
+        <li>string + string &#x27A1 <strong>concatenação</strong> </li>
+    </p>
+    <h2>Conversão de STRING &#x27A1 NUMBER</h2>
+    <p>
+        <code>
+            Number.parseInt(n) &#x27A1 <strong>número inteiro</strong> <br>
+            Number.perseFloat(n) &#x27A1 <strong>número real</strong>
+        </code>
+    </p>
+    <p>
+        Vamos para uma <a href="ex003-02.html" rel="next">página seguinte</a> para fazermos esse experimento.
+    </p>
+</body>
+</html>
