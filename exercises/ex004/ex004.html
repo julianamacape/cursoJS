@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Seu nome tem ${nome.length} letras.`)
+    </script>
+    <h1>Comando <code>document.write</code></h1>
+    <p>
+        Usamos o comando <code>document.write</code> para escrever na tela usando JavaScript. É o equivalente ao <em>escreva</em> do Portugol (VisualG)
+    </p>
+    <pre>
+        <code>
+            &lt;script>
+                var nome = window.prompt('Qual o seu nome?')
+                document.write(`Seu nome tem ${nome.length} letras.`)
+            &lt;/script>
+        </code>
+    </pre>
+    <p>
+        Também é possível mesclas tags de html aos comandos de JavaScript. Foi o que fizemos com o &lt;h2&gt; abaixo:
+    </p>
+    <script>
+        document.write(`<h2>Seu nome tem ${nome.length} letras.</h2>`)
+    </script>
+    <pre>
+        <code>
+            &lt;script>
+                document.write(`<h2>Seu nome tem ${nome.length} letras.</h2>`)
+            &lt;/script>
+        </code>
+    </pre>
+    <h2>Formatação de números</h2>
+    <p>
+        Vamos ver abaixo o código que formata a quantidade de casas decimais nas variáveis tipo NUMBER
+    </p>
+    <pre>
+        <code>
+            > var n1 = 1545.49582
+            undefined
+            > n1
+            1545.49582
+            > n1.toFixed(2)
+            '1545.50'
+        </code>
+    </pre>
+    <p>
+        Vamos ver abaixo o código que muda o sinal de casa decimal de ponto para vírgula
+    </p>
+    <pre>
+        <code>
+            > n1.toFixed(2)
+            '1545.50'
+            > n1.toFixed(2).replace('.',',')
+            '1545,50'
+        </code>
+    </pre>
+    <p>
+        Vamos ver abaixo o código que define e/ou muda a moeda, no caso de valores monetários
+    </p>
+    <pre>
+        <code>
+            > n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
+            'R$1,545.50'
+            > n1.toLocaleString('pt-BR',{style:'currency',currency:'USD'})
+            '$1,545.50'
+            > n1.toLocaleString('pt-BR',{style:'currency',currency:'EUR'})
+            '€1,545.50'
+        </code>
+    </pre>
+</body>
+</html>
