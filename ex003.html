@@ -51,5 +51,64 @@
     <p>
         Vamos para uma <a href="ex003-02.html" rel="next">página seguinte</a> para fazermos esse experimento.
     </p>
+    <h2>Conversão de NUMBER &#x27A1 STRING</h2>
+    <p>
+        <code>
+            String(n) <br>
+            n.toString()
+        </code>
+    </p>
+    <h2>Formatando Strings</h2>
+    <p>
+        <pre>
+            <code>
+                > var nome = 'Juliana'
+                undefined
+                > var idade = 22
+                undefined
+                > var nota = 9.8
+                undefined
+                > 'A aluna ' + nome + ' de ' + idade + ' anos tirou nota ' + nota
+                'A aluna Juliana de 22 anos tirou nota 9.8'
+                > 
+            </code>
+        </pre>
+    </p>
+    <h2>Template Strings</h2>
+    <p>
+        Disponíveis na versão mais recente do JavaScript. Elemina-se a necessidade de uso do sinal de "+"
+    </p>
+    <pre>
+        <code>
+            > var nome = 'Juliana'
+            undefined
+            > var idade = 33
+            undefined
+            > var nota = 9.8
+            undefined
+            > `A aluna ${nome} de ${idade} anos de idade tirou nota ${nota}`
+            'A aluna Juliana de 33 anos de idade tirou nota 9.8'
+        </code>
+    </pre>
+    <p>
+        Vamos continuar trabalhando com <em>strings</em>. Considere agora 's' uma variável qualquer, tá?
+        <ul type="circle">
+            <li>s.length &#x27A1 <strong>quantos caracteres a string tem</strong></li>
+            <li>s.toUpperCase() &#x27A1 <strong>vão todas as letras pra MAIÚSCULO</strong></li>
+            <li>s.toLowerCase() &#x27A1 <strong>vão todas as letras pra minúsculo</strong></li>
+        </ul>
+    </p>
+    <pre>
+        <code>
+            > var name = 'lyvia'
+            undefined
+            > name.length
+            5
+            > name.toUpperCase()
+            'LYVIA'
+            > name.toLowerCase()
+            'lyvia'
+        </code>
+    </pre>
 </body>
 </html>
