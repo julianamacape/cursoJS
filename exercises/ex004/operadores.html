@@ -6,7 +6,15 @@
     <title>Operadores</title>
 </head>
 <body>
-    <h1>Operadores Aritméticos</h1>
+    <h1>Operadores em JS</h1>
+    <ul>
+        <li>Aritméticos</li>
+        <li>de Atribuição</li>
+        <li>Relacionais</li>
+        <li>Lógicos (ou Boolean)</li>
+        <li>Ternário</li>
+    </ul>
+    <h2>Operadores Aritméticos</h2>
     <ul>
         <li>adição +</li>
         <li>subtração -</li>
@@ -104,5 +112,98 @@
     <p>
         Quando acontecer de ser <code>n = n+1</code> ou <code>n = n-1</code> já aprendemos que, através do comando da auto-atribuição simplificada, a expressão pode ficar <code>n+=1</code> ou <code>n-=1</code>, respectivamente. <br> Com os operadores de incremento, você pode transformar essa empressão em <code>x++</code> ou <code>x--</code>, respectivamente.
     </p>
+    <h2>Operadores Relacionais</h2>
+    <ul>
+        <li>maior que &gt;</li>
+        <li>menor que &lt;</li>
+        <li>igual a ==</li>
+        <li>maior ou igual a &gt;=</li>
+        <li>menor ou igual a &lt;=</li>
+        <li>diferente !=</li>
+    </ul>
+    <p>
+        Lembre-se de que para <strong>TODA</strong> operação que tenha um sinal relacional o resultado será um operador lógico.
+    </p>
+    <pre>
+        <code>
+            > 5 > 2
+            true
+            > 7 &lt; 4
+            false
+            > 8 >= 4
+            true
+            > 9 &lt;= 7
+            false
+            > 5 == 5
+            true
+            > 4 != 4
+            false
+        </code>
+    </pre>
+    <h3>Operadores relacionais de Identidade</h3>
+    <p>
+        Veja esses exemplos abaixo:
+    </p>
+    <pre>
+        <code>
+            > 5 == 5
+            true
+            > 5 == '5'
+            true
+        </code>
+    </pre>
+    <p>
+        Perceba que o NodeJS declarou como iguais valores dados de tipos diferentes, pois o JavaScript não difere o 5 que é number e o 5 que é string. Por isso utilizamos o operador relacional de <strong>identidade</strong> (ou operador de igualdade restrita) que é o ===
+    </p>
+    <pre>
+        <code>
+            > 5 === 5
+            true
+            > 5 === '5'
+            false
+        </code>
+    </pre>
+    <p>
+        Tem também o operador de desigualdade restrita: "!=="
+    </p>
+    <h2>Operadores Lógicos</h2>
+    <ul>
+        <li>! negação</li>
+        <li>&& conjunção "e"</li>
+        <li>|| disjunção "ou"</li>
+    </ul>
+    <h3>Ordem de Precedência</h3>
+    <ol>
+        <li>operadores aritméticos</li>
+        <li>operadores relacionais</li>
+        <li>operadores lógicos</li>
+    </ol>
+    <p>
+        No caso de haver, numa mesma expressão, mais de um operador lógico:
+        <ol>
+            <li>! negação</li>
+            <li>&& conjunção</li>
+            <li>|| disjunção</li>
+        </ol>
+    </p>
+    <h2>Operador Ternário</h2>
+    <pre>
+        <code>
+            teste ? true : false
+            media >= 7 ? "Aprovado" : "Reprovado"
+            > var num = 9
+            undefined
+            > var res = num % 2 == 0 ? "Par" : "Ímpar"
+            undefined
+            > res
+            'Ímpar'
+            > var num = 8
+            undefined
+            > var res = num % 2 == 0 ? "Par" : "Ímpar"
+            undefined
+            > res
+            'Par'
+        </code>
+    </pre>
 </body>
 </html>
