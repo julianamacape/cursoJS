@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            text-align: justify;
+            font: normal normal 1em Verdana;
+        }
+        #area {
+            background-color: rgb(255, 0, 85);
+            color: white;
+            width: 300px;
+            height: 300px;
+            font: normal normal 15pt Verdana;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Eventos DOM</h1>
+    <p>
+        Os eventos DOM é tudo que possa acontecer com essa &lt;div> rosa que criamos abaixo.
+    </p>
+    <pre>
+        <code>
+            &lt;div id="area">
+                Interaja
+            &lt;/div>
+            <br>
+            &lt;style>
+                #area {
+                    background-color: rgb(255, 0, 85);
+                    color: white;
+                    width: 300px;
+                    height: 300px;
+                    font: normal normal 15pt Verdana;
+                    text-align: center;
+                    line-height: 300px;
+                }
+            &lt;/style>        
+        </code>
+    </pre>
+    <div id="area">
+        Interaja
+    </div>
+    <ul>
+        <li><h3>mouseenter</h3></li>
+        <p>quando o mouse enconstar na &lt;div></p>
+        <li><h3>mousemove</h3></li>
+        <p>quando o mouse se movimenta dentro da &lt;div></p>
+        <li><h3>mousedown</h3></li>
+        <p>quando o usuário clica na &lt;div> e mantém pressionado</p>
+        <li><h3>mouseup</h3></li>
+        <p>quando o usuário solta o botão do mouse que estava pressionado</p>
+        <li><h3>click</h3></li>
+        <p>o simples ato de clicar, sem manter pressionado o botão</p>
+        <li><h3>mouseout</h3></li>
+        <p>quando o mouse sai da área da &lt;div></p>
+    </ul>
+    <p>
+        Vale a pena pesquisar no <strong><a href="https://developer.mozilla.org/pt-BR/docs/Web/Events" rel="dofollow" target="_blank">Google</a></strong> sobre uma lista de tooooodos os eventos DOM.
+    </p>
+    <p>
+        Para <em>disparar</em> um evento, é preciso entender <strong>funções</strong>.
+    </p>
+    <h2>Funções</h2>
+    <p>
+        Um bloco de ações/comandos só acontecerá quando acontecer tal coisa. Isso é função. A gente sabe que tudo que a gente escreve no VS Code o navegador roda automaticamente, né? Aí com as funções isso muda. Em JavaScript, o bloco aparece assim: 
+    </p>
+    <pre>
+        <code>
+            {
+                bloco de ações
+            }
+        </code>
+    </pre>
+    <p>
+        A sintaxe completa é:
+    </p>
+    <pre>
+        <code>
+            function ação (parâmetro) {
+                bloco
+            }
+        </code>
+    </pre>
+    <p>
+        Importante lembrar que os eventos podem ser configurados dentro do <strong>HTML</strong> ou dentro do <strong>JavaScript</strong>.
+    </p>
+    <ol>
+        <li><h3><a href="insidehtml.html" rel="next">eventos dentro de HTML</a></h3></li>
+        <li><h3><a href="insidejs.html" rel="next">eventos dentro do JavaScript</a></h3></li>
+    </ol>
 </body>
 </html>

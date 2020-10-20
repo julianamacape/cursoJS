@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    text-align: justify;
+    font: normal normal 1em Verdana;
+    line-height: 18pt;
+}
+
+p {
+    
+}
+#area {
+    background-color: rgb(255, 0, 85);
+    color: white;
+    width: 300px;
+    height: 300px;
+    font: normal normal 15pt Verdana;
+    text-align: center;
+    line-height: 300px;
+}
+
+strong {
+    color: red;
+}

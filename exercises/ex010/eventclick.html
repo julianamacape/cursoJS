@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="insidehtml.css">
+</head>
+<body>
+    <h1>Eventos dentro do HTML</h1>
+    <h2>click</h2>
+    <pre>
+        <code>
+            &lt;div id="area" <strong>onclick</strong>="quandoclicar()">
+                Interaja
+            &lt;/div>
+            <br>
+            &lt;script>
+                function <strong>quandoclicar</strong>() {
+                    var a = window.document.getElementById('area')
+                    a.innerText='Você Clicou!'
+                }
+            &lt;/script>
+        </code>
+    </pre>
+    <div id="area" onclick="quandoclicar()">
+        Interaja
+    </div>
+    <script>
+        function quandoclicar() {
+            var a = window.document.getElementById('area')
+            a.innerText='Você Clicou!'
+        }
+    </script>
+    <p>
+        Agora vamos "ler" tudo isso que tá rolando no código. É o mesmo que dizer: <br> <em>Quando o usuário <strong>clicar</strong> na &lt;div> de <strong>id="area"</strong> vai acontecer um <strong>evento</strong>. A esse evento demos o nome de <strong>quando clicar()</strong>. Para entender o que esse evento quandoclicar() faz, destrinchamos numa <strong>função</strong>. O evento quandoclicar() vai fazer com que o <strong>innerText</strong>, ou seja, o texto interno da &lt;div> mude para <strong>'Você Clicou!'</strong>.</em>
+    </p>
+    <a href="insidehtml.html" rel="prev">Voltar</a> para página "Eventos dentro do HTML" <br>
+    <a href="ex006.html" rel="prev">Voltar</a> para a página "Eventos DOM"
+</body>
+</html>

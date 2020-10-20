@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="insidehtml.css">
+</head>
+<body>
+    <h1>Eventos dentro do HTML</h1>
+    <H2>mouseenter</H2>
+    <pre>
+        <code>
+            &lt;div id="area" <strong>onmouseenter</strong>="quandoentrar()">
+                Interaja
+            &lt;/div>
+            <br>
+            &lt;script>
+                function <strong>quandoentrar</strong>() {
+                    var a = window.document.getElementById('area')
+                    a.innerText='Você Entrou!'
+                }
+            &lt;/script>
+        </code>
+    </pre>
+    <div id="area" onmouseenter="quandoentrar()">
+        Interaja
+    </div>
+    <script>
+        function quandoentrar() {
+            var a = window.document.getElementById('area')
+            a.innerText='Você entrou!'
+        }
+    </script>
+    <a href="insidehtml.html" rel="prev">Voltar</a> para página "Eventos dentro do HTML" <br>
+    <a href="ex006.html" rel="prev">Voltar</a> para a página "Eventos DOM"
+</body>
+</html>
