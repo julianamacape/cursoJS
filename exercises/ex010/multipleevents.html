@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="insidehtml.css">
+</head>
+<body>
+    <h1>Eventos dentro do HTML</h1>
+    <h2>vários eventos juntos</h2>
+    <div id="area" onclick="quandoclicar()" onmouseenter="quandoentrar()" onmouseout="quandosair()">
+        Interaja
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        function quandoclicar(){
+            a.innerText='Você clicou!'
+            a.style.background='black'
+            a.style.color='yellow'
+        }
+
+        function quandoentrar (){
+            a.innerText='Você entrou!'
+        }
+
+        function quandosair (){
+            a.innerText='Você saiu!'
+        }
+    </script>
+    <br>
+    <a href="insidehtml.html" rel="prev">Voltar</a> para página "Eventos dentro do HTML" <br>
+    <a href="ex006.html" rel="prev">Voltar</a> para a página "Eventos DOM"
+</body>
+</html>
