@@ -9,6 +9,30 @@
 <body>
     <h1>Eventos dentro do HTML</h1>
     <h2>vários eventos juntos</h2>
+    <pre>
+        <code>
+            &lt;div id="area" <strong>onclick</strong>="quandoclicar()" <strong>onmouseenter</strong>="quandoentrar()" <strong>onmouseout</strong>="quandosair()">
+                Interaja
+            &lt;/div>
+            <br>
+            &lt;script>
+                var a = window.document.getElementById('area')
+                function <strong>quandoclicar()</strong>{
+                    a.innerText='Você clicou!'
+                    a.style.background='black'
+                    a.style.color='yellow'
+                }
+        
+                function <strong>quandoentrar()</strong>{
+                    a.innerText='Você entrou!'
+                }
+        
+                function <strong>quandosair()</strong>{
+                    a.innerText='Você saiu!'
+                }
+            &lt;/script>
+        </code>
+    </pre>
     <div id="area" onclick="quandoclicar()" onmouseenter="quandoentrar()" onmouseout="quandosair()">
         Interaja
     </div>
