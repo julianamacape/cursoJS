@@ -13,7 +13,23 @@
     </div>
     <script>
         var a = window.document.getElementById('area')
-        
+        a.addEventListener('click', quandoclicar)
+        a.addEventListener('mouseenter', quandoentrar)
+        a.addEventListener('mouseout', quandosair)
+
+        function quandoclicar(){
+            a.innerText='Você clicou!'
+            a.style.background='black'
+            a.style.color='yellow'
+        }
+
+        function quandoentrar (){
+            a.innerText='Você entrou!'
+        }
+
+        function quandosair (){
+            a.innerText='Você saiu!'
+        }
     </script>
     <br>
     <a href="ex006.html" rel="prev">Voltar</a> para a página "Eventos DOM"
