@@ -8,6 +8,34 @@
 </head>
 <body>
     <h1>Eventos dentro do JavaScript</h1>
+    <pre>
+        <code>
+            &lt;div id="area">
+                Interaja
+            &lt;/div>
+            <br>
+            &lt;script>
+                var a = window.document.getElementById('area')
+                a.<strong>addEventListener('click'</strong>, quandoclicar)
+                a.<strong>addEventListener('mouseenter'</strong>, quandoentrar)
+                a.<strong>addEventListener('mouseout'</strong>, quandosair)
+
+                function <strong>quandoclicar</strong>(){
+                    a.innerText='Você clicou!'
+                    a.style.background='black'
+                    a.style.color='yellow'
+                }
+
+                function <strong>quandoentrar</strong> (){
+                    a.innerText='Você entrou!'
+                }
+
+                function <strong>quandosair</strong> (){
+                    a.innerText='Você saiu!'
+                }
+            &lt;/script>
+        </code>
+    </pre>
     <div id="area">
         Interaja
     </div>
