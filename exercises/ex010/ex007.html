@@ -24,5 +24,26 @@
             result.innerHTML = `Resultado da soma é:  ${sum}`
         }
     </script>
+    <pre>
+        <code>
+            &lt;input type="number" name="txtn1" id="txtn1"> +
+            &lt;input type="number" name="txtn2" id="txtn2">
+            &lt;input type="button" value="Somar" onclick="somar()">
+
+            &lt;div id="result">Resultado da soma é: &lt;/div>
+
+            &lt;script>
+                function somar() {
+                    var tn1 = window.document.getElementById('txtn1')
+                    var tn2 = window.document.getElementById('txtn2')
+                    var result = window.document.getElementById('result')
+                    var n1 = Number(tn1.value)
+                    var n2 = Number(tn2.value)
+                    var sum = n1 + n2
+                    result.innerHTML = `Resultado da soma é:  ${sum}`
+                }
+            &lt;/script>
+        </code>
+    </pre>
 </body>
 </html>
