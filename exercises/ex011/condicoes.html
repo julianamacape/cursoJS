@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            font: normal normal 1em Verdana;
+            text-align: justify;
+        }
+
+        img {
+            max-width: 50vw;
+            min-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Condições em JavaScript</h1>
+    <h3>Vamos falar de sequências...</h3>
+    <p>
+        &#x2B07 <br> 1) var n = 3 <br> &#x2B07 2) <br> n += 2 <br> &#x2B07 <br> window.alert(n)
+    </p>
+    <p>
+        <em>Esses exemplos de comandos 1), 2) e 3) precisam ser executados numa sequência lógica. Aleatoriamente não rolaria. Também não dá pra omitir um dos passos.</em>
+    </p>
+    <p>
+        Haverá situações em que a execução de um comando não será flúido e ininterrupto assim. Quer dizer, haverá situações em que a execução de um comando dependerá de outra circunstância. Mais claramente, haverá situações em que a execução de um comando estará <strong>CONDICIONADA</strong> à situação "tal" acontecer.
+    </p>
+    <p>
+        Em JavaScript as condições iniciam com o termo <strong><em>if</em></strong>. A sintaxe é tipo:
+    </p>
+    <pre>
+        <code>
+            if (condição) {
+                bloco  |
+                de     | T R U E
+                ações  |
+            } else {
+                bloco  |
+                de     | F A L S E
+                ações  |
+            }
+        </code>
+    </pre>
+    <p>
+        <em>Basicamente o que estamos dizendo com essa estrutura acima é: <strong>SE</strong> tal coisa acontecer (que é a condição), o programa executa a ação X, <strong>SENÃO</strong>, o programa executa a ação Y.</em>
+    </p>
+    <h2>Tipos de condições</h2>
+    <h3>SIMPLES</h3>
+    <pre>
+        <code>
+            if (condition) {
+                TRUE
+            } 
+        </code>
+    </pre>
+    <p>
+        Ou...
+    </p>
+    <pre>
+        <code>
+            if (condition) {
+                TRUE
+            } else {
+                FALSE
+            }
+        </code>
+    </pre>
+    <p>
+        Seguimos agora para o NodeJS no arquivo <code>condicoes.js</code>
+    </p>
+    <img src="01.png" alt="01"> <br> <img src="02.png" alt="02"> <br> <img src="03.png" alt="03"> <br> <img src="04.png" alt="04">
+    <p>
+        Digamos que você está criando um programa para o departamento de trânsito da sua cidade que visa multar quem ultrapassar o limite de 60km/h. Vamos criar esse programa usando condições em JavaScript. Vontaldo pro NodeJS....
+    </p>
+    <img src="05.png" alt="05"> <br> <img src="06.png" alt="06"> <br> <img src="07.png" alt="07"> <br> <img src="08.png" alt="08">
+    <p>
+        Seguimos adicionando, dessa vez, <strong><em>SENÃO</em></strong>
+    </p>
+    <img src="09.png" alt="09"> <br> <img src="10.png" alt="10">
+</body>
+</html>
