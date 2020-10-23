@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de velocidade</title>
+    <style>
+        body {
+            font: normal normal 1.1em Courier;
+        }
+    </style>
+</head>
+<body>
+    <h1>DETRAN - Verificador de Velocidade</h1>
+    Velocidade do Carro: <input type="number" name="txtspeed" id="txtspeed">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="result"></div>
+
+    <script>
+        function calcular() {
+            var speed = Number(window.document.querySelector('input#txtspeed').value)
+            var result = window.document.querySelector('div#result')
+            result.innerHTML = `Sua velocidade atual é de ${speed}km/h. `
+            if (speed > 60) {
+            result.innerHTML += `O limite nesta via é de 60km/h. Você está multado por excesso de velocidade.`
+            } else {
+                result.innerHTML += `Você está dentro do limite de velocidade. Dirija sempre com segurança.`
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
