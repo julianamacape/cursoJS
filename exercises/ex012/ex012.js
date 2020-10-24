@@ -1,9 +1,11 @@
-var age = 29
-console.log(`Você tem ${age} anos de idade. `)
-if (age < 18) {
-    console.log('Você não pode entrar neste evento.')
-} else if (age < 21) {
-    console.log('Você pode entrar neste evento, porém não poderá consumir bebida alcoólica.')
+var agora = new Date()
+var hora = agora.getHours()
+var min = agora.getMinutes()
+console.log(`Agora são ${hora} horas e ${min} minutos.`)
+if (hora < 12) {
+    console.log(`Bom dia!`)
+} else if (hora <= 18) {
+    console.log(`Boa tarde!`)
 } else {
-    console.log('Você pode entrar neste evento e pode consumir bebida alcoólica.')
+    console.log(`Boa noite!`)
 }

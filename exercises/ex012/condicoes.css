@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+code {
+    line-height: 20px;
+}
+
+div {
+    border-width: 3px;
+    border-color: red;
+    border-style: solid;
+    margin-left: 90px;
+    width: 200px;
+    
+}
+
+img {
+   max-width: 50vw;
+}
+
+.inline {
+    display: inline-block;
+}
