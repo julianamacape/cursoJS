@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="siteidade.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section> 
+        <div id="verify">
+            Sua Idade: <input type="number" name="idade" id="idade"> <br>
+            Sexo: <input type="radio" name="optsex" id="woman" checked>
+            <label for="woman">Feminino</label>
+            <input type="radio" name="optsex" id="man">
+            <label for="man">Masculino</label>
+        <input type="button" value="Verificar" onclick="Verificar()">
+        </div>
+        <p id="result">
+            Detectamos...
+        </p>
+        <div>
+            <img id="foto" src="eskeleton.png" alt="Esqueleto">
+        </div>
+    </section>
+    <footer>
+        <p>
+            &#xA9; CursoemVideo
+        </p>
+    </footer>
+    <script src="siteidade.js"></script>
+</body>
+</html>
