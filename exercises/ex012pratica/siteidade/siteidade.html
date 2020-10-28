@@ -8,22 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Verificador de Idade</h1>   
     </header>
-    <section> 
-        <div id="verify">
-            Sua Idade: <input type="number" name="idade" id="idade"> <br>
-            Sexo: <input type="radio" name="optsex" id="woman" checked>
-            <label for="woman">Feminino</label>
-            <input type="radio" name="optsex" id="man">
-            <label for="man">Masculino</label>
-        <input type="button" value="Verificar" onclick="Verificar()">
-        </div>
-        <p id="result">
-            Detectamos...
-        </p>
+    <section>
         <div>
-            <img id="foto" src="eskeleton.png" alt="Esqueleto">
+            <p>
+                Ano de Nascimento: 
+                <input type="number" name="txtdob" id="txtdob" min="1900">
+            </p>
+            
+            <p>
+                Sexo: 
+                <input type="radio" name="gender" id="femin" checked>
+                <label for="femin">Feminino</label>
+                <input type="radio" name="gender" id="masc">
+                <label for="masc">Masculino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="result">
+            Preencha os dados acima para ver o resultado.
+        </div>
+        <div>
+            <img id="foto" src="skeleton.png" alt="Esqueleto">
         </div>
     </section>
     <footer>
